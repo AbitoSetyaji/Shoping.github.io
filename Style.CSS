@@ -1,0 +1,308 @@
+/* Nabar */
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-family: viga;
+    font-size: 32px;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url('img/carousel-2.jpg');
+    background-size: cover;
+    height: 540px;
+    text-align: center;
+    position: relative;
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: white;
+}
+
+.jumbotron .container {
+    z-index: 1;
+    position: relative;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/carousel-2.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .display-4 {
+    color: #acacac;
+    margin-top: 100px;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.jumbotron .display-4 span {
+    font-weight: 500;
+}
+
+/* Info panel */
+.info-panel {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: -100px;
+    background-color: white;
+}
+
+.info-panel img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.info-panel h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.info-panel p {
+    font-size: 14px;
+    color: acacac;
+    margin-top: -5px;
+    font-weight: 200;
+}
+
+
+/*Workingspace */
+.workingspace {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.workingspace h3 {
+    font-size: 30px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.workingspace h6 {
+    font-size: 15px;
+    font-weight: 200;
+    color: #acacac;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.workingspace p {
+    font-size: 40px;
+
+    font-weight: 200;
+    margin: 30px 0;
+}
+
+
+/* testimonial */
+.testimonial {
+    margin-top: 100px;
+}
+
+.testimonial h5 {
+    text-align: center;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 24px;
+}
+
+.testimonial figure img {
+    width: 60px;
+    margin: 20px 10px 10px;
+    opacity: 0.6;
+}
+
+.testimonial figure img.utama {
+    width: 90px;
+    opacity: 1;
+    margin-top: 5px;
+}
+
+.testimonial figure h5 {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    color: #1c2c5d;
+}
+
+.testimonial figure p {
+    font-size: 12px;
+    color: #acacac;
+    margin-top: -5px !important;
+}
+
+.testimonial figcaption {
+    text-align: center;
+}
+
+
+
+
+
+/*Utility*/
+.tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #e9edf2;
+}
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #0000003d;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.overlay .box{
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 3px 40px rgba(0, 0, 0, 0.13);
+}
+.wrapper{
+    width: 350px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 3px 40px rgba(0, 0, 0, 0.13);
+}
+.wrapper form .input-field{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.wrapper form .input-field label{
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.wrapper form .input-field label span{
+   color: #f00;
+}
+.wrapper form .input-field input,
+.wrapper form .input-field textarea
+{
+    width: 100%;
+    height: 50px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #e9edf2;
+    border: 2px solid #c7cbd1;
+    outline: none;
+}
+
+.wrapper form .input-field input:focus,
+.wrapper form .input-field textarea:focus{
+    border: 2px solid #32b4f5;
+}
+.wrapper form .input-field textarea{
+    height: 100px;
+    resize: none;
+}
+.wrapper form button{
+    float: right;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background: linear-gradient(45deg,#0288e8,#32b4f5);
+    color: #fff;
+    font-weight: 500;
+    box-shadow: 0 3px 50px #32b4f559;
+    cursor: pointer;
+}
+.wrapper form button:hover{
+    background: linear-gradient(45deg,#0288e8,#0288e8);
+
+}
+
+/*icon
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+
+    .navbar-brand,
+    .nav-link {
+        color: rgb(0, 0, 0) !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+    .nav-link :hover ::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0b63dc;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .jumbotron {
+        margin-top: -75px;
+        height: 640;
+    }
+
+
+    .jumbotron .display-4 {
+        font-size: 62px;
+    }
+
+    .workingspace {
+        text-align: left;
+    }
+
+    .testimonial {
+        font-size: 25px;
+        margin: 5px;
+    }
+
+    @media screen and (max-width: 400px) {
+        .form{
+            padding: 20px 10px;
+        }
+}
